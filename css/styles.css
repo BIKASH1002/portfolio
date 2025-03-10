@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+    background-color: #2C2F33;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Uniform section spacing: 50px top & bottom */
+  section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .section-line {
+    width: 60px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 0 auto 40px;
+    border-radius: 2px;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Custom container */
+  .custom-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #34495e;
+  }
+  .collapse.navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 15px;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #2980b9 !important;
+  }
+  .btn-primary {
+    background-color: #3498db;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Carousel (Home Section) */
+  #home {
+    margin-top: 56px; /* offset for fixed navbar */
+  }
+  .carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Hero text styles */
+  .sour-text {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    margin: 10px 0;
+  }
+  .carousel-caption .typing-text {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    min-height: 60px;
+  }
+  
+  /* Glitch effect for "I'm Bikash" */
+  .data-name {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .data-name::before {
+    content: "101100 110011 100101 110011 101101";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 20px;
+    opacity: 0.5;
+    color: #00ff99;
+    filter: blur(2px);
+  }
+  .changing-symbols {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.7;
+    color: #00ff99;
+    text-align: center;
+  }
+  @keyframes data-glitch {
+    0% { opacity: 0; transform: scaleX(0); }
+    50% { opacity: 0.8; transform: scaleX(1.1); }
+    100% { opacity: 1; transform: scaleX(1); }
+  }
+  .data-name span {
+    display: inline-block;
+    animation: data-glitch 1.5s ease-in-out infinite alternate;
+  }
+  .data-name span:nth-child(2) { animation-delay: 0.2s; }
+  .data-name span:nth-child(3) { animation-delay: 0.4s; }
+  .data-name span:nth-child(4) { animation-delay: 0.6s; }
+  .data-name span:nth-child(5) { animation-delay: 0.8s; }
+  .data-name span:nth-child(6) { animation-delay: 1s; }
+  .typing-container {
+    margin-top: 80px;
+  }
+  
+  /* About Me Section text */
+  #about p {
+    font-size: 1.2rem;
+  }
+  #about .text-start {
+    text-align: left !important;
+  }
+  
+  /* Flip Counter Styles */
+  .flip-counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter-container {
+    display: flex;
+    gap: 100px;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 2rem;
+    background: black;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px cyan;
+    min-width: 260px;
+  }
+  .flip-card {
+    display: inline-block;
+    perspective: 1000px;
+    min-width: 55px;
+    text-align: center;
+  }
+  .flip-card .digit {
+    display: block;
+    width: 55px;
+    height: 60px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px cyan;
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Film Strip Section ("Things I've Worked On") */
+  #work-experience {
+    padding-top: 50px;
+    padding-bottom: 25px; /* Reduced bottom spacing */
+  }
+  .filmstrip-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+  }
+  .filmstrip-track {
+    display: flex;
+    align-items: center;
+    width: 200%;
+    animation: scroll-left 40s linear infinite;
+  }
+  .filmstrip-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  .filmstrip-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .filmstrip-item:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }
+  .filmstrip-container:hover .filmstrip-track {
+    animation-play-state: paused;
+  }
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* Card Image for Projects/Certificates */
+  .card-img {
+    border-radius: 5px;
+    margin: 15px 0;
+    height: 340px;
+    object-fit: cover;
+  }
+  .certificate-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+  }
+  .certificate-title:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact icons: circular, uniform size */
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 20px;
+  }
+  

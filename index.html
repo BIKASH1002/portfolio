@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bikash Portfolio</title>
+
+  <!-- Google Fonts: Sour Gummy for hero text, Roboto for body, Orbitron for flip counter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sour+Gummy&display=swap" 
+    rel="stylesheet"
+  >
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar (Centered nav links only) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/BIKASH1002/portfolio/blob/main/Bikash_resume.pdf" target="_blank">
+              Resume
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section (Carousel) -->
+  <section id="home">
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" 
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" 
+                aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 with glitch effect for name -->
+        <div class="carousel-item active" style="background-image: url('img/home/slide1.png');">
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1 class="sour-text">Hi!</h1>
+            <h1 class="data-name">
+              I'm <span>B</span><span>I</span><span>K</span><span>A</span><span>S</span><span>H</span>
+            </h1>
+            <span class="changing-symbols" id="symbols">∑ π Δ ∞ Σ</span>
+            <div class="typing-container">
+              <h1 class="typing-text" id="typing"></h1>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('img/home/slide2.png');">
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1 class="sour-text">Fueled by data. Transformed by analytics.</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="custom-container">
+      <h2 class="section-title">Bikash at a Glance</h2>
+      <div class="section-line"></div>
+      <div class="row align-items-start">
+        <!-- Left Column -->
+        <div class="col-md-6 text-start">
+          <p>
+            I am an aspiring data scientist with a zeal to leverage data and translate it into impactful stories. I treat data like a canvas, where numbers are the paint and insights are the masterpiece waiting to be discovered. I enjoy working on end-to-end data projects, from collecting raw information to transforming it into actionable insights that drive business decisions.
+          </p>
+          <p>
+            Beyond my technical work, I am deeply curious about emerging technologies and enjoy sharing my insights with the community through LinkedIn posts. I often find myself exploring new tools and techniques, constantly experimenting to stay ahead in this ever-evolving field. My passion for learning extends beyond just implementation—I often work on personal projects, adding my own touch and making them available for others to learn from.
+          </p>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6 text-start">
+          <p>
+            I also enjoy diving into articles about the latest innovations, uncovering trends that shape the future of technology. I like working with conversational AI like ChatGPT, using it as a tool to explore new ideas, refine my prompting techniques, and experiment with digital creation.
+          </p>
+          <p>
+            When I need a creative escape, I indulge in designing accessories on platforms like Printify and Redbubble, blending my analytical mindset with artistic expression. I’m always eager to learn, collaborate, and explore new possibilities in the world of data. Feel free to check out my projects, and let’s connect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip Counter Section (After About Me, Before Filmstrip) -->
+  <section id="flip-counter">
+    <div class="custom-container">
+      <div class="flip-counter-container">
+        <div class="counter-container">
+          <div class="counter">
+            📄 Publications:
+            <span class="flip-card"><span class="digit" id="papers">0</span></span>
+          </div>
+          <div class="counter">
+            💡 Projects:
+            <span class="flip-card"><span class="digit" id="projects">0</span></span>
+          </div>
+          <div class="counter">
+            🏆 Certifications:
+            <span class="flip-card"><span class="digit" id="certifications">0</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Film Strip Section ("Things I've Worked On") -->
+  <section id="work-experience">
+    <div class="custom-container">
+      <h2 class="section-title">A Glimpse into My Work</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="filmstrip-container">
+      <div class="filmstrip-track">
+        <!-- 10 distinct filmstrip items -->
+        <div class="filmstrip-item"><img src="img/works/1.png" alt="Work 1"></div>
+        <div class="filmstrip-item"><img src="img/works/2.png" alt="Work 2"></div>
+        <div class="filmstrip-item"><img src="img/works/3.png" alt="Work 3"></div>
+        <div class="filmstrip-item"><img src="img/works/4.png" alt="Work 4"></div>
+        <div class="filmstrip-item"><img src="img/works/5.png" alt="Work 5"></div>
+        <div class="filmstrip-item"><img src="img/works/6.png" alt="Work 6"></div>
+        <div class="filmstrip-item"><img src="img/works/7.png" alt="Work 7"></div>
+        <div class="filmstrip-item"><img src="img/works/8.png" alt="Work 8"></div>
+        <div class="filmstrip-item"><img src="img/works/9.png" alt="Work 9"></div>
+        <div class="filmstrip-item"><img src="img/works/10.png" alt="Work 10"></div>
+        <!-- Duplicate for seamless scrolling -->
+        <div class="filmstrip-item"><img src="img/works/1.png" alt="Work 1"></div>
+        <div class="filmstrip-item"><img src="img/works/2.png" alt="Work 2"></div>
+        <div class="filmstrip-item"><img src="img/works/3.png" alt="Work 3"></div>
+        <div class="filmstrip-item"><img src="img/works/4.png" alt="Work 4"></div>
+        <div class="filmstrip-item"><img src="img/works/5.png" alt="Work 5"></div>
+        <div class="filmstrip-item"><img src="img/works/6.png" alt="Work 6"></div>
+        <div class="filmstrip-item"><img src="img/works/7.png" alt="Work 7"></div>
+        <div class="filmstrip-item"><img src="img/works/8.png" alt="Work 8"></div>
+        <div class="filmstrip-item"><img src="img/works/9.png" alt="Work 9"></div>
+        <div class="filmstrip-item"><img src="img/works/10.png" alt="Work 10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (6 Cards, 2 Columns x 3 Rows) -->
+  <section id="projects">
+    <div class="custom-container px-5">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+      <div class="row g-4 justify-content-center">
+        <!-- 6 Cards in 2 columns -->
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>Aspect Sentiment Analyzer</h4>
+            <img src="img/projects/1.png" alt="Project One Image" class="img-fluid card-img" />
+            <p>Curious about what your customers really feel?</p>
+            <p>This project uses NLP and machine learning to analyze reviews by aspect, delivering nuanced sentiment insights of Amazon food product.</p>
+            <a href="https://github.com/BIKASH1002/Aspect-Sentiment" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>Enhanced PageRank Optimizer</h4>
+            <img src="img/projects/5.png" alt="Project Two Image" class="img-fluid card-img" />
+            <p>Ever wondered how top search results pop up instantly?</p>
+            <p>This project enhances the traditional PageRank algorithm using advanced matrix multiplication for real-time web indexing.</p>
+            <a href="https://github.com/BIKASH1002/Enhanced-Page-Rank-Algorithm" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>Seizure Prediction System</h4>
+            <img src="img/projects/3.png" alt="Project Three Image" class="img-fluid card-img" />
+            <p>How robust is your seizure prediction model?</p>
+            <p>This project utilizes EEG data and deep learning with continual learning techniques to predict epileptic seizures.</p>
+            <a href="https://github.com/BIKASH1002/EWC-Automated-Seizure-Prediction" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>Quantum Stock Forecaster</h4>
+            <img src="img/projects/6.png" alt="Project Four Image" class="img-fluid card-img" />
+            <p>Is quantum machine learning convincing?</p>
+            <p>This project explores quantum regression models using Qiskit and Pennylane for enhanced stock market prediction.</p>
+            <a href="https://github.com/BIKASH1002/QML-Stock-Predictor" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>Zomato Order Insights</h4>
+            <img src="img/projects/4.png" alt="Project Five Image" class="img-fluid card-img" />
+            <p>Ever wondered where your food money really goes?</p>
+            <p>This Power BI dashboard visualizes key metrics from Zomato orders and expenses to reveal dining patterns.</p>
+            <a href="https://github.com/BIKASH1002/Zomato-Dashboard--Power-BI" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glass-card">
+            <h4>AI Cold Email Generator</h4>
+            <img src="img/projects/2.png" alt="Project Six Image" class="img-fluid card-img" />
+            <p>Struggling to write the perfect cold email?</p>
+            <p>This web-based solution leverages AI to generate personalized, impactful cold emails in seconds.</p>
+            <a href="https://github.com/BIKASH1002/Smart-Outreach-Tool" target="_blank" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section (3 Cards) -->
+  <section id="certificates">
+    <div class="custom-container px-5">
+      <h2 class="section-title">Courses & Certificates</h2>
+      <div class="section-line"></div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="glass-card text-center">
+            <img src="img/courses/1.png" alt="Certificate 1" class="img-fluid card-img" />
+            <a href="https://courses.cognitiveclass.ai/certificates/49cb872084154b1c90b051b31f76d026" target="_blank" class="certificate-title d-block">Python in Data Science - IBM</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-card text-center">
+            <img src="img/courses/2.png" alt="Certificate 2" class="img-fluid card-img" />
+            <a href="https://www.credly.com/badges/1120beb2-d3c7-4838-8de1-b239fec8bb59/print" target="_blank" class="certificate-title d-block">Data Analytics Essentials - Cisco</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-card text-center">
+            <img src="img/courses/3.png" alt="Certificate 3" class="img-fluid card-img" />
+            <a href="https://www.udemy.com/certificate/UC-1bc6a094-371f-4a02-b768-b0271af52914/" target="_blank" class="certificate-title d-block">Data Science Bootcamp - Udemy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github">
+    <div class="custom-container">
+      <h2 class="section-title">GitHub</h2>
+      <div class="section-line"></div>
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" style="width: 100px; margin-bottom: 20px;" />
+      <div>
+        <a href="https://github.com/BIKASH1002" target="_blank" class="btn btn-primary">Visit GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="custom-container">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+      <div>
+        <!-- Circular LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/bikash-sahoo10/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="LinkedIn" class="contact-icon">
+        </a>
+        <!-- Circular Gmail Icon -->
+        <a href="mailto:your.bikashc.sahoo10@gmail.com">
+          <img src="https://cdn-icons-png.flaticon.com/128/2913/2913990.png" alt="Gmail" class="contact-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #34495e;">
+    <div class="container text-center py-3">
+      <p>&copy; 2025 Bikash Chandra Sahoo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
