@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }, 500);
     }
     // Updated counters: Publications=2, Projects=21+ and Certifications=16
-    flipCounter("papers", 2);
+    flipCounter("papers", 3);
     flipCounter("projects", 21, true);
     flipCounter("certifications", 16);
   });
